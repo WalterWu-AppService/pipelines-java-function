@@ -20,3 +20,11 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
+
+- task: AzureRmWebAppDeployment@4
+  inputs:
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'MAIC - Wicresoft - Azure - 03(586cff84-887b-4df8-8f10-53840eb89a1a)'
+    appType: 'functionApp'
+    WebAppName: 'waltertestjava'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
