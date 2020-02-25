@@ -44,5 +44,5 @@ steps:
     azureSubscription: 'MAIC - Wicresoft - Azure - 03(586cff84-887b-4df8-8f10-53840eb89a1a)'
     appType: 'functionApp'
     appName: $(appName)
-    package: '$(build.artifactstagingdirectory)/$(appName)'
+    package: '$(build.artifactstagingdirectory)/javafunctions'
     deploymentMethod: 'auto'
