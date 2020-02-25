@@ -9,6 +9,10 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
+variables:
+  appName: my-app-name
+  system.debug: true
+
 steps:
 - task: Maven@3
   inputs:
@@ -41,6 +45,6 @@ steps:
   inputs:
     azureSubscription: 'MAIC - Wicresoft - Azure - 03(586cff84-887b-4df8-8f10-53840eb89a1a)'
     appType: 'functionApp'
-    appName: 'waltertestjava'
+    appName: $(appName)
     package: '$(build.artifactstagingdirectory)/$(appName)'
     deploymentMethod: 'auto'
