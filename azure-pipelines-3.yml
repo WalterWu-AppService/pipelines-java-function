@@ -10,7 +10,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 variables:
-  appName: my-app-name
+  appName: 'waltertestjava'
   system.debug: true
 
 steps:
