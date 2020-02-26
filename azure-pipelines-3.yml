@@ -8,7 +8,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 variables:
-  appName: 'waltertestjava'
+  appName: 'wtjjjjj'
   system.debug: true
 
 steps:
@@ -43,6 +43,6 @@ steps:
   inputs:
     azureSubscription: 'MAIC - Wicresoft - Azure - 03(586cff84-887b-4df8-8f10-53840eb89a1a)'
     appType: 'functionApp'
-    appName: $(appName)
+    appName: 'wtjjjjj'
     package: '$(build.artifactstagingdirectory)/javafunctions'
     deploymentMethod: 'auto'
